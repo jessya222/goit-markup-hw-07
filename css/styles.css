@@ -10,7 +10,7 @@
   --team-background: #f5f4fa;
   --header-border-color: #ececec;
   --portfolio-border-color: #eeeeee;
-  --clients-list-border-color: #afb1b8;
+  --clients__list-border-color: #afb1b8;
 }
 
 body {
@@ -379,7 +379,7 @@ img {
   padding-bottom: 94px;
 }
 
-.team-list {
+.team__list {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -426,7 +426,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--clients-list-border-color);
+  fill: var(--clients__list-border-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -454,7 +454,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--color);
 }
-.clients-list {
+.clients__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -462,26 +462,26 @@ img {
   margin-top: 50px;
 }
 
-.clients-list-item {
+.clients__item {
   margin-left: 30px;
 }
 
-.clients-list-wrapper-link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 90px;
-  border: 1px solid var(--clients-list-border-color);
+  border: 1px solid var(--clients__list-border-color);
   box-sizing: border-box;
   border-radius: 4px;
-  fill: var(--clients-list-border-color);
+  fill: var(--clients__list-border-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-wrapper-link:hover,
-.clients-list-wrapper-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
   cursor: pointer;
@@ -685,7 +685,7 @@ img {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-button-item {
+.filter__item {
   margin-left: 8px;
 }
 
@@ -697,7 +697,7 @@ img {
     0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.buttons-list {
+.filter {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -710,7 +710,7 @@ img {
   padding-top: 94px;
 }
 
-.portfolio-img-title {
+.cards__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -719,33 +719,33 @@ img {
   margin-bottom: 4px;
 }
 
-.portfolio-img-description {
+.cards__category {
   font-size: 16px;
   line-height: 1.89;
   letter-spacing: 0.03em;
   color: var(--description-color);
 }
 
-.portfolio-cards {
+.cards {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.portfolio-item {
+.cards__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover {
+.cards__item:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.portfolio-card-description {
+.cards__description {
   background: var(--background);
   border-right: 1px solid var(--portfolio-border-color);
   border-bottom: 1px solid var(--portfolio-border-color);
@@ -755,12 +755,12 @@ img {
   padding: 20px 24px;
 }
 
-.portfolio-list-wrapper {
+.cards__wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.overlay {
+.cards__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -777,8 +777,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover .overlay,
-.portfolio-link:focus .overlay {
+.cards__link:hover .cards__overlay,
+.cards__link:focus .cards__overlay {
   transform: translateY(0%);
   opacity: 1;
 }
