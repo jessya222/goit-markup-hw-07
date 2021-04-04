@@ -381,10 +381,10 @@ img {
 .header .nav__link:focus {
   color: var(--accent-color);
 }
-.header .nav__link_current {
+.header .nav__current {
   color: var(--accent-color);
 }
-.header .nav__link_current::after {
+.header .nav__current::after {
   display: block;
   content: "";
   position: absolute;
